@@ -1,0 +1,237 @@
+/* ------------My flying element------------  */
+.bird {
+  width: 40px;
+  height: 40px;
+  border: 5px solid white;
+  border-radius: 50%;
+  z-index: 5;
+  position: absolute;
+  background-image: url(images/bird-blue.gif);
+  background-size: 100% 100%;
+  animation: fly 20s linear 0.2s infinite;
+}
+/* set animation for .bird  make it turn around the page*/
+
+@keyframes fly {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(0, 1010px);
+  }
+  
+  50% {
+    transform: translate(1300px, 1010px);
+  }
+
+   75% {
+    transform: translate(1300px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* --------------Header------------ */
+header {
+  background: #ff5800;
+  text-align: center;
+  height: 90px;
+  padding: 40px 0;
+}
+
+h1 {
+  margin: 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: white;
+  margin: 0;
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* ------------Body------------  */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* -------------For all h3------------- */
+h3 {
+  text-decoration: underline dotted;
+  transition: 01s linear;
+}
+
+/* -----------Set properties when hover over h3------- */
+h3:hover {
+  color: hsl(5, 100%, 50%);
+  text-decoration: none;
+
+  /* transform: rotateX(360deg); */
+}
+
+h3:active {
+  background-color: red;
+}
+
+/* ------------Main------------  */
+main {
+  height: 650px;
+  width: 90%;
+  margin: auto;
+}
+
+.divmain, .courses_cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colmain {
+  width: 46%;
+  padding: 2%;
+}
+
+.allcourses h3 {
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+
+i {
+  color: red;
+  font-size: 70px;
+  transition: color 1s ease 0.3s;
+}
+
+/* ---------Set properies hover and active for the button i------ */
+i:hover {
+  color: black;
+}
+
+i:active {
+  color: pink;
+}
+
+.courses {
+  width: 18%;
+  padding: 1%;
+  transition: 0.3s linear;
+}
+
+/* set transition When hovering on courses */
+.courses:hover {
+  transform: scale(1.2);
+  /* z-index for the current element to be on top */
+  z-index: 2;
+}
+
+.courses .price {
+  text-align: right;
+  font-weight: bold;
+}
+
+.top {
+  border: 3px solid gray;
+  color: white;
+  text-align: center;
+  border-top-right-radius: 20px;
+  padding: 15px;
+}
+
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: purple;
+}
+.violet {
+  background-color: violet;
+}
+
+.sticker {
+  width: 78%;
+  background-color: yellow;
+  text-align: center;
+  border-radius: 0 15px 15px 0;
+  margin-left: -15px;
+  margin-top: -5px;
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+}
+
+/* ------------Footer------------  */
+.container {
+  width: 90%;
+  margin: auto;
+  background: lightgray;
+  border-top: 2px solid gray;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 29.33%;
+  padding: 2%;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  line-height: 150%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footbottom {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  background: black;
+  height: 40px;
+  color: white;
+}
+
+.footbottom p {
+  font-size: 14px;
+  margin: 5px 25px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  margin: 1px;
+}
+
+sup {
+  font-size: 8px;
+}
+
